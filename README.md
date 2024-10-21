@@ -33,7 +33,30 @@ After cloning the repo (`git clone git@github.com:marcosmoyano/moxie.git`), cd i
 poetry install
 ```
 
-Move into the moxie follder and run the migrations:
+After installing, make sure to activate the virtual environment created by Poetry. Here's an example on how to do this manually:
+
+```sh
+poetry env info
+
+Virtualenv
+Python:         3.12.7
+Implementation: CPython
+Path:           /home/marcos/.cache/pypoetry/virtualenvs/moxie-gYIjfV5k-py3.12
+Executable:     /home/marcos/.cache/pypoetry/virtualenvs/moxie-gYIjfV5k-py3.12/bin/python
+Valid:          True
+
+Base
+Platform:   linux
+OS:         posix
+Python:     3.12.7
+Path:       /usr
+Executable: /usr/bin/python3.12
+
+# Grab the Path
+source /home/marcos/.cache/pypoetry/virtualenvs/moxie-gYIjfV5k-py3.12/bin/activate
+```
+
+Move into the moxie folder and run the migrations:
 
 ```sh
 cd moxie/
